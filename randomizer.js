@@ -1,31 +1,7 @@
 window.onload = function () {
   const studentRandomizer = {
-    students: [{
-        name: 'JOC'
-      },
-      {
-        name: 'Grazi'
-
-      },
-      {
-        name: 'Monica'
-
-      },
-      {
-        name: 'Vini'
-      },
-      {
-        name: 'Héctor'
-      },
-      {
-        name: 'Arnold'
-      },
-      {
-        name: 'Danilo'
-      }
-    ],
     pickOne: function () {
-      let randomStudent = this.students[Math.floor(Math.random() * this.students.length)]
+      let randomStudent = students[Math.floor(Math.random() * students.length)]
       return randomStudent.name;
     },
     timeout: null,
@@ -34,14 +10,12 @@ window.onload = function () {
       this.time = startTime;
       this.timeout = setTimeout(() => {
         if (this.time > 300) {
-          // console.log('the chosen one is: ', this.pickOne());
           this.h1.style = 'color: red'
           this.h1.innerHTML = this.pickOne();
           clearTimeout(this.timeout);
         } else {
-          // console.log(this.pickOne());
           this.h1.innerHTML = this.pickOne();
-          this.time = this.time * 1.05;
+          this.time *= 1.05;
           this.pickOneByTime(this.time)
         }
       }, this.time);
