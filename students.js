@@ -1,49 +1,35 @@
-const students = [{
-    name: 'André'
-  }, {
-    name: 'Bruno'
+const students = [
+  {
+    name: "André",
   },
   {
-    name: 'Daniel'
-  }, {
-    name: 'Fabio'
+    name: "Daniel",
   },
   {
-    name: 'Fabricio'
-  }, {
-    name: 'Gabriel'
+    name: "Fabio",
   },
   {
-    name: 'Gabriela'
-  }, {
-    name: 'Gustavo'
+    name: "Gabriel",
   },
   {
-    name: 'Yordan'
-  }, {
-    name: 'Julia'
+    name: "Gabriela",
   },
   {
-    name: 'Marcela'
-  }, {
-    name: 'Massao'
+    name: "Julia",
   },
   {
-    name: 'Pedro'
-  }, {
-    name: 'Rafael'
+    name: "Marcela",
   },
   {
-    name: 'Rhaysa'
-  }, {
-    name: 'Ricky'
+    name: "Massao",
   },
   {
-    name: 'Seba'
-  }, {
-    name: 'Thiago'
+    name: "Rafael",
   },
   {
-    name: 'Vinicius'
-  }
-]
+    name: "Rhaysa",
+  },
+  {
+    name: "Ricky",
+  },
+];
